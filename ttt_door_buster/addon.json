@@ -1,0 +1,12 @@
+{
+	"title"		:	"TTT Door Mine",
+	"type"		:	"Weapon",
+	"tags"		:	[ "fun" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
+
