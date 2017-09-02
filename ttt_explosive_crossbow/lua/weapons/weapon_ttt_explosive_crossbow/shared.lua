@@ -33,7 +33,7 @@ if CLIENT then
    SWEP.PrintName          = "X-Plosive X-Bow"           
    SWEP.Author             = "St. Addi"
    SWEP.IconLetter         = "w"
-   SWEP.Icon = "vgui/entities/weapon_portalgun.vtf"    
+   SWEP.Icon = "vgui/ttt/icon_ttt_explosive_crossbow_kg.png"    
    
    SWEP.ViewModelFlip = false
 end
@@ -42,7 +42,7 @@ SWEP.Slot               = 7
 SWEP.SlotPos            = 1
 
 if SERVER then
-   resource.AddFile("vgui/entities/weapon_portalgun.vtf")
+   resource.AddFile("vgui/ttt/icon_ttt_explosive_crossbow_kg.png")
 end
 
 SWEP.Base               = "weapon_tttbase"
@@ -375,7 +375,7 @@ if ( SERVER ) then
 	bullet.Src = vecSrc;
 	bullet.Spread = Vector(self.Primary.Cone, self.Primary.cone, 0)
 	bullet.Callback = function(att, tr, dmginfo)
-        	if tr.Entity and not tr.Entity:IsWorld() then
+        if tr.Entity and not tr.Entity:IsWorld() then
 	
 			local self_owner = self.Owner
 		
@@ -412,7 +412,7 @@ if ( SERVER ) then
 	        	explosion:EmitSound( "siege/big_explosion.wav", 500, 75, 0.4)
 	
 			local effect = EffectData()
-	      		effect:SetOrigin(exp_ent:GetPos())
+	      		effect:SetOrigin(tr.HitPos)
 	      		util.Effect("Explosion_2_FireSmoke", effect)	
 			
         	end
