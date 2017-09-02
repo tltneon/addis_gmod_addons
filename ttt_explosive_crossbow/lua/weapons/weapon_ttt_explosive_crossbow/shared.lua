@@ -248,7 +248,7 @@ function SWEP:Deploy()
 end
 
 function SWEP:SetZoom(state)
-    if CLIENT then 
+    if CLIENT or !self.Owner then 
        return
     else
        if state then
