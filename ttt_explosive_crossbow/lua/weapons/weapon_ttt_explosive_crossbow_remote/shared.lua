@@ -28,7 +28,6 @@ SWEP.Base = "weapon_tttbase"
 
 SWEP.Kind = WEAPON_EQUIP
 SWEP.CanBuy = {} 
-SWEP.WeaponID = AMMO_C4
 
 SWEP.UseHands			= true
 SWEP.ViewModelFlip		= false
