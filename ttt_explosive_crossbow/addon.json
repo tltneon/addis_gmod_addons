@@ -1,0 +1,12 @@
+{
+	"title"		:	"TTT Explosive Crossbow w/ Remote",
+	"type"		:	"Weapon",
+	"tags"		:	[ "fun" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
+
