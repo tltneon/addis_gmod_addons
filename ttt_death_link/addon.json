@@ -1,0 +1,12 @@
+{
+	"title"		:	"TTT Death Link",
+	"type"		:	"Weapon",
+	"tags"		:	[ "fun" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
+
