@@ -104,7 +104,18 @@ function playerDeath(victim, inflictor, attacker )
 		ent:SetNWBool("deathlink_used", true);
 		victim:SetNWBool("deathlink_used", true);
 		
-		ent:TakeDamage(1000, victim, nil);
+		local explosion = ents.Create( "env_explosion" )
+	    explosion:SetPos( ent:GetPos() )
+	    explosion:SetOwner(self.Owner)
+	    explosion:SetKeyValue( "iMagnitude", 180 )
+	    explosion:SetKeyValue( "rendermode", "4")
+		explosion:Spawn()
+	    explosion:Fire( "Explode", "", 0 )
+	    explosion:EmitSound( "siege/big_explosion.wav", 500, 500 )
+	
+		local effect = EffectData()
+	    effect:SetOrigin(ent:GetPos())
+	    util.Effect("Explosion_2_FireSmoke", effect)
 
 		
 	end
