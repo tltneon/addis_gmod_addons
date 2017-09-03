@@ -106,7 +106,7 @@ function playerDeath(victim, inflictor, attacker )
 		
 		local explosion = ents.Create( "env_explosion" )
 	    explosion:SetPos( ent:GetPos() )
-	    explosion:SetOwner(self.Owner)
+	    explosion:SetOwner(victim)
 	    explosion:SetKeyValue( "iMagnitude", 180 )
 	    explosion:SetKeyValue( "rendermode", "4")
 		explosion:Spawn()
