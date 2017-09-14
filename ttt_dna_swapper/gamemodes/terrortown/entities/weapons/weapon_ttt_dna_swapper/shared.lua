@@ -1,6 +1,7 @@
 
 
 if SERVER then 
+	resource.AddWorkshop("1133619836");
 	resource.AddFile("materials/vgui/ttt/dnaswapper")
 end
 
@@ -20,6 +21,8 @@ if CLIENT then
    desc = "Primary: Collect DNA\nSecondary: Insert DNA into corpse"
    };
 end
+
+SWEP.Base = "weapon_tttbase"
 
 SWEP.Slot      = 6
 
