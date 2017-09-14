@@ -2,7 +2,6 @@
 
 if SERVER then 
 	resource.AddWorkshop("1133619836");
-	resource.AddFile("materials/vgui/ttt/dnaswapper")
 end
 
 AddCSLuaFile();
